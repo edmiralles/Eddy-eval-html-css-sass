@@ -45,6 +45,15 @@ main {
   padding: 45px 108px;
 }
 
+button {
+  margin-right: 15px;
+  border: none;
+  background: black;
+  color: #fff;
+  padding: 5px 25px;
+  cursor: pointer;
+}
+
 .products h2 {
   font-size: 1.2rem;
   text-align: center;
@@ -70,7 +79,7 @@ main {
   right: -18px;
   top: 8px;
   padding: 15px;
-  color: orange;
+  color: #e79e01;
   background: black;
   font-weight: bold;
   font-size: 1.5rem;

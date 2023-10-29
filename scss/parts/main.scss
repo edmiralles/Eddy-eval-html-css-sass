@@ -1,9 +1,14 @@
 @use '../_var' as v;
 @use'../_class' as c;
+@use'../_mixins' as m;
 
 main {
     background: v.$background-main;
     padding: 45px 108px;
+}
+
+button{
+@include m.price-button;
 }
 
 .products {
@@ -36,7 +41,7 @@ main {
         right: -18px;
         top: 8px;
         padding: 15px;
-        color: orange;
+        color: v.$primary-color;
         background: black;
         font-weight: bold;
         font-size: 1.5rem;
@@ -63,3 +68,4 @@ main {
  .prix-promo {
     color: v.$primary-color;
  }
+

@@ -65,6 +65,15 @@ main {
   padding: 45px 108px;
 }
 
+.price button {
+  margin-right: 15px;
+  border: none;
+  background: black;
+  color: #fff;
+  padding: 5px 25px;
+  cursor: pointer;
+}
+
 .products h2 {
   font-size: 1.2rem;
   text-align: center;
@@ -90,7 +99,7 @@ main {
   right: -18px;
   top: 8px;
   padding: 15px;
-  color: orange;
+  color: #e79e01;
   background: black;
   font-weight: bold;
   font-size: 1.5rem;
@@ -117,6 +126,82 @@ main {
   color: #e79e01;
 }
 
+footer {
+  background: #373737;
+}
+
+footer > div > ul {
+  justify-content: space-evenly;
+}
+
+footer > div ul p {
+  color: #fff;
+}
+
+footer > div > ul li {
+  width: 20%;
+  text-align: center;
+}
+
+footer hr {
+  height: 3px;
+  background: #818181;
+  border: none;
+}
+
+footer .social {
+  margin-bottom: 15px;
+}
+
+footer .social li {
+  margin-right: 72px;
+}
+
+footer .social li:last-of-type {
+  margin-right: 0;
+}
+
+footer .social li a {
+  color: #818181;
+}
+
+#footer-nav {
+  width: 516px;
+  margin: auto;
+  background: #fff;
+  padding: 10px 0;
+  border-radius: 5px;
+  position: relative;
+  top: -18px;
+}
+
+#footer-nav ul {
+  justify-content: space-evenly;
+}
+
+#footer-nav li::after {
+  content: "";
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: grey;
+  display: inline-block;
+  position: relative;
+  right: -17px;
+  top: 3px;
+}
+
+#footer-nav li:last-child:after {
+  display: none;
+}
+
+#copyright {
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 20px 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -140,12 +225,6 @@ h1 {
 
 h2 {
   font-size: 2.5rem;
-}
-
-h3 {
-  font-size: 2rem;
-  margin-bottom: 30px;
-  text-align: center;
 }
 
 strong {
