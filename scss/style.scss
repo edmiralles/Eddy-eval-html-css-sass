@@ -9,6 +9,15 @@
 @use'_responsive' as r;
 @use'_anims' as a;
 
+@font-face {
+    font-family: primary-font;
+    src: url(../fonts/LiberationSans-Regular-webfont.ttf);
+}
+@font-face {
+    font-family: primary-font-bold;
+    src: url(../fonts/LiberationSans-Bold-webfont.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;

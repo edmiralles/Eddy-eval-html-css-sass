@@ -188,6 +188,14 @@ footer .social li a {
   padding: 20px 0;
 }
 
+@font-face {
+  font-family: primary-font;
+  src: url(../fonts/LiberationSans-Regular-webfont.ttf);
+}
+@font-face {
+  font-family: primary-font-bold;
+  src: url(../fonts/LiberationSans-Bold-webfont.ttf);
+}
 * {
   margin: 0;
   padding: 0;
