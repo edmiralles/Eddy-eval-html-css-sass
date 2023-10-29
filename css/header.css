@@ -1,0 +1,52 @@
+@charset "UTF-8";
+.container-fix {
+  width: 1051px;
+  margin: auto;
+}
+
+/* commun à tous les icones */
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.align-horiz {
+  display: flex;
+}
+
+.align-horiz-space-between {
+  justify-content: space-between;
+}
+
+.align-horiz-space-around {
+  justify-content: space-around;
+}
+
+.align-horiz-center, #header-logo > div:first-of-type {
+  justify-content: center;
+}
+
+.align-vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.primary-color {
+  color: #e79e01;
+}
+
+.secondary-color {
+  color: #3d3d3d;
+}
+
+header > div:first-of-type {
+  background: #efefef;
+  align-items: center;
+  padding: 34px 0 12px 0;
+  margin-bottom: 21px;
+}
+
+header > img {
+  display: block;
+}
