@@ -15,21 +15,8 @@
   display: flex;
 }
 
-.align-horiz-space-between {
+header div:first-child, header div:last-child {
   justify-content: space-between;
-}
-
-.align-horiz-space-around {
-  justify-content: space-around;
-}
-
-.align-horiz-center, #header-logo > div:first-of-type {
-  justify-content: center;
-}
-
-.align-vertical {
-  display: flex;
-  flex-direction: column;
 }
 
 .primary-color {

@@ -16,19 +16,19 @@
     display: flex;   
 }
 
-.align-horiz-space-between {
+%align-horiz-space-between {
     justify-content: space-between;
 }
 
-.align-horiz-space-around {
+%align-horiz-space-around {
     justify-content: space-around;
 }
 
-.align-horiz-center {
+%align-horiz-center {
     justify-content: center;
 }
 
-.align-vertical {
+%align-vertical {
     display: flex;
     flex-direction: column;
 }

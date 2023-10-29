@@ -11,25 +11,12 @@
   -webkit-font-smoothing: antialiased;
 }
 
-.align-horiz {
+.align-horiz, footer .social ul {
   display: flex;
 }
 
-.align-horiz-space-between {
-  justify-content: space-between;
-}
-
-.align-horiz-space-around {
-  justify-content: space-around;
-}
-
-.align-horiz-center {
+footer .social ul {
   justify-content: center;
-}
-
-.align-vertical {
-  display: flex;
-  flex-direction: column;
 }
 
 .primary-color {

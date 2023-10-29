@@ -1,10 +1,6 @@
 @use '../_var' as v;
 @use'../_class' as c;
 
-#header-logo>div:first-of-type {
-
-    @extend .align-horiz-center;
-}
 
 header {
     &>div:first-of-type {
@@ -12,6 +8,16 @@ header {
         align-items: center;
         padding: 34px 0 12px 0;
         margin-bottom: 21px;
+    }
+
+    div {
+        &:first-child {
+            @extend %align-horiz-space-between;
+        }
+
+        &:last-child {
+            @extend %align-horiz-space-between;
+        }
     }
 
     &>img {

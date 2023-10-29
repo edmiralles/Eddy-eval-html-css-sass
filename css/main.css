@@ -11,25 +11,16 @@
   -webkit-font-smoothing: antialiased;
 }
 
-.align-horiz {
+.align-horiz, .price {
   display: flex;
 }
 
-.align-horiz-space-between {
+.products .align-horiz, .products .price {
   justify-content: space-between;
 }
 
-.align-horiz-space-around {
-  justify-content: space-around;
-}
-
-.align-horiz-center {
+.price {
   justify-content: center;
-}
-
-.align-vertical {
-  display: flex;
-  flex-direction: column;
 }
 
 .primary-color {
@@ -62,9 +53,8 @@ button {
   position: absolute;
   bottom: 58px;
 }
-.products .align-horiz {
+.products .align-horiz, .products .price {
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 .products a {
   text-decoration: none;
@@ -89,8 +79,6 @@ button {
 
 .price {
   margin-top: 19px;
-  display: flex;
-  justify-content: center;
 }
 .price span {
   font-size: 1.5rem;

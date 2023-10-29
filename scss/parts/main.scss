@@ -23,7 +23,7 @@ button{
 
     .align-horiz {
         flex-wrap: wrap;
-        justify-content: space-between;
+        @extend %align-horiz-space-between;
     }
 
     a {
@@ -52,14 +52,14 @@ button{
 
  .price {
      margin-top: 19px;
-     display: flex;
-     justify-content: center;
+     @extend .align-horiz;
+     @extend %align-horiz-center;
 
      span {
          font-size: 1.5rem;
      }
  }
- 
+
  .prix-barre {
     text-decoration: line-through;
     margin-right: 15px;

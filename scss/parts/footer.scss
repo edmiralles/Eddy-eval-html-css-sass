@@ -26,6 +26,11 @@ footer {
     .social {
         margin-bottom: 15px;
 
+        ul{
+            @extend .align-horiz;
+            @extend %align-horiz-center;
+        }
+        
         li {
             margin-right: 72px;
 
