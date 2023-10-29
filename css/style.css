@@ -3,7 +3,6 @@
   display: block;
   padding: 5px 45px 5px 0;
 }
-
 #primary-nav ul > li:last-of-type a {
   padding-right: 0;
 }
@@ -55,7 +54,6 @@ header > div:first-of-type {
   padding: 34px 0 12px 0;
   margin-bottom: 21px;
 }
-
 header > img {
   display: block;
 }
@@ -65,7 +63,7 @@ main {
   padding: 45px 108px;
 }
 
-.price button {
+button {
   margin-right: 15px;
   border: none;
   background: black;
@@ -112,7 +110,6 @@ main {
   display: flex;
   justify-content: center;
 }
-
 .price span {
   font-size: 1.5rem;
 }
@@ -129,38 +126,30 @@ main {
 footer {
   background: #373737;
 }
-
 footer > div > ul {
   justify-content: space-evenly;
 }
-
-footer > div ul p {
+footer > div > ul p {
   color: #fff;
 }
-
 footer > div > ul li {
   width: 20%;
   text-align: center;
 }
-
 footer hr {
   height: 3px;
   background: #818181;
   border: none;
 }
-
 footer .social {
   margin-bottom: 15px;
 }
-
 footer .social li {
   margin-right: 72px;
 }
-
 footer .social li:last-of-type {
   margin-right: 0;
 }
-
 footer .social li a {
   color: #818181;
 }
@@ -174,12 +163,10 @@ footer .social li a {
   position: relative;
   top: -18px;
 }
-
 #footer-nav ul {
   justify-content: space-evenly;
 }
-
-#footer-nav li::after {
+#footer-nav ul li::after {
   content: "";
   width: 13px;
   height: 13px;
@@ -190,8 +177,7 @@ footer .social li a {
   right: -17px;
   top: 3px;
 }
-
-#footer-nav li:last-child:after {
+#footer-nav ul li:last-child:after {
   display: none;
 }
 

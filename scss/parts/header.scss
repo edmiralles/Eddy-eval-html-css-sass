@@ -1,18 +1,20 @@
 @use '../_var' as v;
 @use'../_class' as c;
 
-#header-logo > div:first-of-type {
+#header-logo>div:first-of-type {
 
     @extend .align-horiz-center;
 }
 
-header > div:first-of-type {
-    background: v.$background-header;
-    align-items: center;
-    padding:34px 0 12px 0;
-    margin-bottom: 21px;
-}
+header {
+    &>div:first-of-type {
+        background: v.$background-header;
+        align-items: center;
+        padding: 34px 0 12px 0;
+        margin-bottom: 21px;
+    }
 
-header > img {
-    display: block;
+    &>img {
+        display: block;
+    }
 }

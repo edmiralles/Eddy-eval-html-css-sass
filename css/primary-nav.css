@@ -2,7 +2,6 @@
   display: block;
   padding: 5px 45px 5px 0;
 }
-
 #primary-nav ul > li:last-of-type a {
   padding-right: 0;
 }
