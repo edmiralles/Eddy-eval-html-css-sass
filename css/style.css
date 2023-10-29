@@ -1,0 +1,99 @@
+@charset "UTF-8";
+.container-fix {
+  width: 1051px;
+  margin: auto;
+}
+
+/* commun à tous les icones */
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.align-horiz {
+  display: flex;
+}
+
+.align-horiz-space-between {
+  justify-content: space-between;
+}
+
+.align-horiz-space-around {
+  justify-content: space-around;
+}
+
+.align-horiz-center {
+  justify-content: center;
+}
+
+.align-vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.gradient {
+  background: linear-gradient(to bottom, #1e5799 0%, #207cca 72%, #7db9e8 100%);
+}
+
+.primary-color {
+  color: #e79e01;
+}
+
+.secondary-color {
+  color: #3d3d3d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: "primary-font-bold, sans serif", sans-serif;
+  background: #1c1c1c;
+  color: #3d3d3d;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+strong {
+  font-weight: normal;
+}
+
+a {
+  color: #3d3d3d;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.7s;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  margin: 30px 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

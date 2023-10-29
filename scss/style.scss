@@ -1,0 +1,65 @@
+@use '_var' as v;
+@use "parts/primary-nav";
+@use "parts/header";
+@use "parts/main";
+@use "parts/footer";
+@use'_mixins' as m;
+@use'_class' as c;
+@use'_maps' as map;
+@use'_responsive' as r;
+@use'_anims' as a;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: v.$primary-font-bold, sans-serif;
+    background: v.$background-site;
+    color: v.$secondary-color;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+strong {
+    font-weight: normal;
+}
+
+a {
+    color: v.$secondary-color;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .7s;
+    &:hover {   
+        text-decoration: underline;
+    }
+}
+
+hr {
+    margin: 30px 10px
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
