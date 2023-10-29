@@ -1,5 +1,11 @@
 @use '_var' as v;
 
+%background-header{ 
+    background: url("../images/background.jpg");
+    background-repeat: repeat;
+    background-position: 50px 50px, 50% 0;
+    background-attachment: fixed;}
+    
 .container-fix {
     width: 1051px;
     margin: auto;

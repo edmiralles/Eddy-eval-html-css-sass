@@ -7,6 +7,13 @@
   padding-right: 0;
 }
 
+header > div:first-of-type {
+  background: url("../images/background.jpg");
+  background-repeat: repeat;
+  background-position: 50px 50px, 50% 0;
+  background-attachment: fixed;
+}
+
 .container-fix {
   width: 1051px;
   margin: auto;
@@ -40,7 +47,6 @@ footer .social ul, .price {
 }
 
 header > div:first-of-type {
-  background: #efefef;
   align-items: center;
   padding: 34px 0 12px 0;
   margin-bottom: 21px;

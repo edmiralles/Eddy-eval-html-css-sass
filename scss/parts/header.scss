@@ -4,7 +4,7 @@
 
 header {
     &>div:first-of-type {
-        background: v.$background-header;
+        @extend %background-header;
         align-items: center;
         padding: 34px 0 12px 0;
         margin-bottom: 21px;
