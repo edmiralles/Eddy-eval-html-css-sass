@@ -14,6 +14,7 @@
     font-family: primary-font;
     src: url(../fonts/LiberationSans-Regular-webfont.ttf);
 }
+
 @font-face {
     font-family: primary-font-bold;
     src: url(../fonts/LiberationSans-Bold-webfont.ttf);
@@ -39,6 +40,10 @@ body {
 
 h1 {
     font-size: 1.5rem;
+
+    @include r.mobile {
+        margin-bottom: 50px;
+    }
 }
 
 h2 {
@@ -54,7 +59,8 @@ a {
     font-weight: bold;
     text-decoration: none;
     transition: all .7s;
-    &:hover {   
+
+    &:hover {
         text-decoration: underline;
     }
 }

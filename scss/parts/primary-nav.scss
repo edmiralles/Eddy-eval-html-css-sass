@@ -1,7 +1,16 @@
+@use'../_responsive' as r;
+
 #primary-nav {
     a {
         display: block;
         padding: 5px 45px 5px 0;
+    }
+
+    ul {
+        @include r.mobile {
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
 
     ul>li:last-of-type a {

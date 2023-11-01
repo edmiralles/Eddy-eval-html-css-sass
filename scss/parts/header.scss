@@ -1,5 +1,6 @@
 @use '../_var' as v;
 @use'../_class' as c;
+@use'../_responsive' as r;
 
 
 header {
@@ -8,6 +9,11 @@ header {
         align-items: center;
         padding: 34px 0 12px 0;
         margin-bottom: 21px;
+
+        @include r.mobile {
+            text-align: center;
+            padding: 34px 20px 12px;
+        }
     }
 
     div {
@@ -22,5 +28,20 @@ header {
 
     &>img {
         display: block;
+    }
+}
+
+#header-logo {
+    &>div:first-of-type {
+        @include r.mobile {
+            align-items: initial;
+        }
+    }
+
+    p {
+        @include r.mobile {
+            position: absolute;
+            top: 150px;
+        }
     }
 }

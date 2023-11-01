@@ -3,6 +3,11 @@
   width: 1051px;
   margin: auto;
 }
+@media (max-width: 576px) {
+  .container-fix {
+    width: 100%;
+  }
+}
 
 /* commun à tous les icones */
 .icon::before {
@@ -13,6 +18,11 @@
 
 .align-horiz, footer .social ul {
   display: flex;
+}
+@media (max-width: 576px) {
+  .align-horiz, footer .social ul {
+    flex-direction: column;
+  }
 }
 
 footer .social ul {
@@ -40,6 +50,12 @@ footer > div > ul li {
   width: 20%;
   text-align: center;
 }
+@media (max-width: 576px) {
+  footer > div > ul li {
+    width: 50%;
+    margin-bottom: 35px;
+  }
+}
 footer hr {
   height: 3px;
   background: #818181;
@@ -47,6 +63,11 @@ footer hr {
 }
 footer .social {
   margin-bottom: 15px;
+}
+@media (max-width: 576px) {
+  footer .social ul {
+    flex-direction: row;
+  }
 }
 footer .social li {
   margin-right: 72px;
@@ -83,6 +104,15 @@ footer .social li a {
 }
 #footer-nav ul li:last-child:after {
   display: none;
+}
+
+@media (max-width: 576px) {
+  #footer-nav ul,
+  footer > div > ul.align-horiz,
+  footer .social footer > div > ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 #copyright {

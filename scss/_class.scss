@@ -1,14 +1,20 @@
 @use '_var' as v;
+@use'_responsive' as r;
 
-%background-header{ 
+%background-header {
     background: url("../images/background.jpg");
     background-repeat: repeat;
     background-position: 50px 50px, 50% 0;
-    background-attachment: fixed;}
-    
+    background-attachment: fixed;
+}
+
 .container-fix {
     width: 1051px;
     margin: auto;
+
+    @include r.mobile {
+        width: 100%;
+    }
 }
 
 /* commun à tous les icones */
@@ -19,7 +25,11 @@
 }
 
 .align-horiz {
-    display: flex;   
+    display: flex;
+
+    @include r.mobile {
+        flex-direction: column;
+    }
 }
 
 %align-horiz-space-between {
@@ -40,9 +50,9 @@
 }
 
 .primary-color {
-    color:v.$primary-color;
+    color: v.$primary-color;
 }
 
 .secondary-color {
-    color:v.$secondary-color;
+    color: v.$secondary-color;
 }

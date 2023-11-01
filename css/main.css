@@ -3,6 +3,11 @@
   width: 1051px;
   margin: auto;
 }
+@media (max-width: 576px) {
+  .container-fix {
+    width: 100%;
+  }
+}
 
 /* commun à tous les icones */
 .icon::before {
@@ -13,6 +18,11 @@
 
 .align-horiz, .price {
   display: flex;
+}
+@media (max-width: 576px) {
+  .align-horiz, .price {
+    flex-direction: column;
+  }
 }
 
 .products .align-horiz, .products .price {

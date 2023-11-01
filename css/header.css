@@ -10,6 +10,11 @@ header > div:first-of-type {
   width: 1051px;
   margin: auto;
 }
+@media (max-width: 576px) {
+  .container-fix {
+    width: 100%;
+  }
+}
 
 /* commun à tous les icones */
 .icon::before {
@@ -20,6 +25,11 @@ header > div:first-of-type {
 
 .align-horiz {
   display: flex;
+}
+@media (max-width: 576px) {
+  .align-horiz {
+    flex-direction: column;
+  }
 }
 
 header div:first-child, header div:last-child {
@@ -39,6 +49,24 @@ header > div:first-of-type {
   padding: 34px 0 12px 0;
   margin-bottom: 21px;
 }
+@media (max-width: 576px) {
+  header > div:first-of-type {
+    text-align: center;
+    padding: 34px 20px 12px;
+  }
+}
 header > img {
   display: block;
+}
+
+@media (max-width: 576px) {
+  #header-logo > div:first-of-type {
+    align-items: initial;
+  }
+}
+@media (max-width: 576px) {
+  #header-logo p {
+    position: absolute;
+    top: 150px;
+  }
 }

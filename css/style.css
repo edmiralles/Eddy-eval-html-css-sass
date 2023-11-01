@@ -3,6 +3,12 @@
   display: block;
   padding: 5px 45px 5px 0;
 }
+@media (max-width: 576px) {
+  #primary-nav ul {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 #primary-nav ul > li:last-of-type a {
   padding-right: 0;
 }
@@ -18,6 +24,11 @@ header > div:first-of-type {
   width: 1051px;
   margin: auto;
 }
+@media (max-width: 576px) {
+  .container-fix {
+    width: 100%;
+  }
+}
 
 /* commun à tous les icones */
 .icon::before {
@@ -28,6 +39,11 @@ header > div:first-of-type {
 
 .align-horiz, footer .social ul, .price {
   display: flex;
+}
+@media (max-width: 576px) {
+  .align-horiz, footer .social ul, .price {
+    flex-direction: column;
+  }
 }
 
 .products .align-horiz, .products .price, header div:first-child, header div:last-child {
@@ -51,8 +67,26 @@ header > div:first-of-type {
   padding: 34px 0 12px 0;
   margin-bottom: 21px;
 }
+@media (max-width: 576px) {
+  header > div:first-of-type {
+    text-align: center;
+    padding: 34px 20px 12px;
+  }
+}
 header > img {
   display: block;
+}
+
+@media (max-width: 576px) {
+  #header-logo > div:first-of-type {
+    align-items: initial;
+  }
+}
+@media (max-width: 576px) {
+  #header-logo p {
+    position: absolute;
+    top: 150px;
+  }
 }
 
 main {
@@ -130,6 +164,12 @@ footer > div > ul li {
   width: 20%;
   text-align: center;
 }
+@media (max-width: 576px) {
+  footer > div > ul li {
+    width: 50%;
+    margin-bottom: 35px;
+  }
+}
 footer hr {
   height: 3px;
   background: #818181;
@@ -137,6 +177,11 @@ footer hr {
 }
 footer .social {
   margin-bottom: 15px;
+}
+@media (max-width: 576px) {
+  footer .social ul {
+    flex-direction: row;
+  }
 }
 footer .social li {
   margin-right: 72px;
@@ -175,6 +220,15 @@ footer .social li a {
   display: none;
 }
 
+@media (max-width: 576px) {
+  #footer-nav ul,
+  footer > div > ul.align-horiz,
+  footer .social footer > div > ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 #copyright {
   color: #fff;
   font-size: 0.8rem;
@@ -209,6 +263,11 @@ body {
 
 h1 {
   font-size: 1.5rem;
+}
+@media (max-width: 576px) {
+  h1 {
+    margin-bottom: 50px;
+  }
 }
 
 h2 {
